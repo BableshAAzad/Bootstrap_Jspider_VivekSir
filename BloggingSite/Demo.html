@@ -7,13 +7,27 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .circle {
+            border-radius: 50%;
+        }
+
+        .alignCON {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        .coresalItem{
+            text-align: right;
+        }
+    </style>
 </head>
 
 <body>
     <!-- ! Navbar  -->
     <nav class="navbar navbar-expand-lg bg-success">
         <div class="container-fluid">
-            <a class="navbar-brand text-light" href="#">Navbar</a>
+            <a class="navbar-brand text-light" href="#">BableshAAzad.com</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -47,7 +61,7 @@
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button class="btn btn-outline-light" type="submit">Search</button>
                 </form>
             </div>
         </div>
@@ -66,23 +80,27 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="https://source.unsplash.com/1400x400/?nature, river" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
+                <div class="carousel-caption coresalItem d-none d-md-block">
+                    <h5>Welcome to My blogging site</h5>
                     <p>Some representative placeholder content for the first slide.</p>
+                    <button type="button" class="btn btn-primary">Primary</button>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="https://source.unsplash.com/1400x400/?nature, sea" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
+                <div class="carousel-caption coresalItem d-none d-md-block">
+                    <h5>Welcome to My blogging site</h5>
                     <p>Some representative placeholder content for the second slide.</p>
+                    <button type="button" class="btn btn-info">Primary</button>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="https://source.unsplash.com/1400x400/?nature, hills" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
+                <div class="carousel-caption coresalItem d-none d-md-block">
+                    <h5>Welcome to My blogging site</h5>
                     <p>Some representative placeholder content for the third slide.</p>
+                    <button type="button" class="btn btn-success">Primary</button>
+
                 </div>
             </div>
         </div>
@@ -97,6 +115,18 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+    <!-- ^--------------------------------------------------------------------- -->
+    <!-- ! contain  -->
+    <h3 class="text-bg-info mt-2 text-center">Lorem Text</h3>
+    <p class="bg-body-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias dolor modi soluta
+        incidunt earum dolores?
+        Obcaecati deserunt quo maxime saepe? Quia, corporis dignissimos. Perferendis, temporibus deleniti pariatur
+        veniam commodi debitis!
+        Esse veritatis nihil, recusandae, itaque et voluptate ipsum earum exercitationem unde placeat rerum nobis. Quo
+        modi, sed, autem porro dolores praesentium odit quia officiis ipsa vitae, eaque nulla. Numquam, totam.
+        Dignissimos, iure excepturi impedit adipisci facere sed tempora unde dicta animi tempore voluptatum cumque?
+        Corporis rerum, quas molestias, at nemo facere iure incidunt voluptatem sapiente omnis ea distinctio a ipsam.
+    </p>
     <!-- ^--------------------------------------------------------------------- -->
     <!-- ! card  -->
     <div class="container-fluid gap-3 d-inline-flex">
@@ -136,12 +166,57 @@
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                 content. This content is a little bit longer.</p>
-            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+            <p class="card-text text-success">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem vel optio maiores repellat maxime, eum
+                beatae modi molestias saepe. Exercitationem voluptatem dicta nisi inventore doloribus minus repudiandae
+                ad, vitae ea.
+                Quae ullam velit nulla a voluptatum beatae sapiente officia nostrum? Deserunt, minima. Accusamus
+                repellendus, id nostrum sapiente repudiandae, assumenda doloremque, laudantium aspernatur cum expedita
+                eum soluta laborum quas veritatis omnis.
+                Error eius eos nesciunt, autem ipsa exercitationem debitis eveniet quos quod voluptates quae hic ullam
+                consequuntur accusantium incidunt adipisci atque asperiores. Corporis alias libero assumenda ducimus
+                nobis molestias! Assumenda, amet.</p>
+            <p class="card-text text-secondary"><small>Last updated 3 mins ago</small></p>
         </div>
     </div>
-    <!-- ^--------------------------------------------------------------------- -->
+
+    <!-- ^------------------------------Circle cards--------------------------------------- -->
+    <div class="row alignCON mt-2">
+        <div class="col-lg-4">
+            <img class="mb-2 circle" src="https://source.unsplash.com/1400x400/?nature, bulls" alt="pic" width="150"
+                height="150">
+            <h2>Heading</h2>
+            <p>Some representative placeholder content for the three columns of text below the carousel. This is the
+                first column.</p>
+            <p><a class="btn btn-secondary" href="#">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <img class="mb-2 circle" src="https://source.unsplash.com/1400x400/?nature, ice" alt="pic" width="150"
+                height="150">
+            <h2>Heading</h2>
+            <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second
+                column.</p>
+            <p><a class="btn btn-secondary" href="#">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <img class="mb-2 circle" src="https://source.unsplash.com/1400x400/?nature, hills" alt="pic" width="150"
+                height="150">
+            <h2>Heading</h2>
+            <p>And lastly this, the third column of representative placeholder content.</p>
+            <p><a class="btn btn-secondary" href="#">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+    </div>
+    <!-- ^--------------------------------------------------------------------------------- -->
+    <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+        <div class="col-md-6 px-0">
+            <h1 class="display-4 fst-italic">Title of a longer featured blog post</h1>
+            <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and
+                efficiently about what’s most interesting in this post’s contents.</p>
+            <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
+        </div>
+    </div>
+    <!-- ^ ----------------------------------------------------------------------->
     <!-- ! Pagination  -->
-    <nav aria-label="...">
+    <nav aria-label="..." class="mt-3">
         <ul class="pagination justify-content-center">
             <li class="page-item disabled">
                 <a class="page-link">Previous</a>
@@ -158,8 +233,48 @@
     </nav>
     <!-- ^--------------------------------------------------------------------- -->
     <!-- !  -->
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+            <div class="col-6 col-md bg-body-secondary m-2">
+                <img class="mb-2 circle" src="https://source.unsplash.com/1400x400/?nature, bulls" alt="pic" width="40"
+                    height="40">
+                <small class="d-block mb-3 text-muted">© 2017–2021</small>
+            </div>
+            <div class="col-6 col-md bg-body-secondary m-2">
+                <h5>Features</h5>
+                <ul class="list-unstyled text-small">
+                    <li class="mb-1 "><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+                    <li class="mb-1 "><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+                    <li class="mb-1 "><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+                    <li class="mb-1 "><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a>
+                    </li>
+                    <li class="mb-1 "><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
+                    <li class="mb-1 "><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md bg-body-secondary m-2">
+                <h5>Resources</h5>
+                <ul class="list-unstyled text-small">
+                    <li class="mb-1 "><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+                    <li class="mb-1 "><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+                    <li class="mb-1 "><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
+                    <li class="mb-1 "><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md bg-body-secondary m-2">
+                <h5>About</h5>
+                <ul class="list-unstyled text-small">
+                    <li class="mb-1 "><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+                    <li class="mb-1 "><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+                    <li class="mb-1 "><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+                    <li class="mb-1 "><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     <!-- ^--------------------------------------------------------------------- -->
     <!-- !  -->
+
     <!-- ^--------------------------------------------------------------------- -->
     <!-- !  -->
     <!-- ^--------------------------------------------------------------------- -->
